@@ -1,0 +1,11 @@
+{
+  "name": "artonaturel-front",
+  "version": "1.0.0",
+  "description": "frontend du site artOnaturel",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css --style compressed"
+  },
+  "author": "Aurelie Benhar",
+  "license": "ISC"
+}

@@ -1,0 +1,80 @@
+.page-header{
+    color: $color-primary;
+    background-color: white;
+    // background-image: url("../images/coucher-soleil.jpg");
+    // background-size: cover;
+    // background-position: bottom 50px right 0px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    &-logo_image{
+        width: 100px;
+    };
+    & .infos{
+        list-style-type: none;
+        position: absolute;
+        margin-top: 0;
+        top: 0;
+        right: 50px;
+        & li{
+            float: left;
+            text-align: center;
+            padding: 20px;
+            & a{
+                text-decoration: none;
+                color: $color-primary;
+            }
+            & i{
+                font-size: 25px;
+            }
+        }
+    }
+    & .navigation{
+        border-top: solid $color-primary;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        background-color: white;
+        margin: 0;
+        & .categories{
+            display: block;
+            float: left;
+            text-align: center;
+            padding: 20px;
+            max-height: 20px;
+            overflow: hidden;
+            & a{
+                text-decoration: none;
+                color: $color-primary;
+            }
+            &-sous{
+                left:-999em;
+                background-color: white;
+                display: block;
+                position: absolute;
+                list-style-type: none;
+                text-align: left;
+                width: 250px;
+                margin-top: 19px;
+                border-top: solid $color-primary;
+                border-bottom: solid $color-primary;
+                & li{
+                    padding-bottom: 15px;
+                }
+                & ul{
+                    position: relative;
+                    top: 0;
+                    left: 50px;
+                }
+            }
+            &:hover  .categories-sous{
+                left: auto;
+            }
+        }
+    }
+};
