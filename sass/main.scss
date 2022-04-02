@@ -1,6 +1,7 @@
 @import "./base/base";
 
 @import "./utils/variables";
+@import "./utils/keyframe";
 
 @import "./layouts/header";
 @import "./layouts/footer";
@@ -8,3 +9,4 @@
 @import "./pages/accueil";
 @import "./pages/presentation-produits";
 @import "./pages/presentation-entreprise";
+@import "./pages/caroussel";
