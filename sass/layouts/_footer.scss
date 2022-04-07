@@ -6,6 +6,10 @@
     padding-top: 20px;
     padding-bottom: 20px;
     margin-top: 30px;
+    @media screen and (max-width: 900px){
+        flex-direction: column;
+        align-items: center;
+    }
     & i{
         margin: 5px;
     };
@@ -21,5 +25,8 @@
         flex-direction: column;
         width: 15%;
         text-align: center;
+        @media screen and (max-width: 900px){
+            width: 85%;
+        }
     };
 };

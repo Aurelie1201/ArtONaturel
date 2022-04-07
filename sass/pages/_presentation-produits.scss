@@ -1,16 +1,30 @@
 .proposition{
     padding-top: 60px;
+    padding-bottom: 40px;
     @media screen and (max-width: 900px) {
         padding-top: 0px;
         border-top: solid $color-primary;
-        background: url('../images/logo.jpg') center no-repeat;
-        background-attachment: fixed;
+        background: url('../images/logo.jpg') fixed bottom no-repeat;
     }
-    & h2{
+    &-titre{
         text-align: center;
-        font-size: 3em;
+        font-size: 2em;
         font-weight: 500;
         color: $color-primary;
+        @media screen and (max-width: 900px){
+            border-radius: 15px;
+            width: 150px;
+            padding: 15px;
+            margin: 0 auto;
+            margin-top: 10px;
+            font-size: 0.8em;
+            font-weight: 200;
+            color: white;
+            background-color: $color-primary;
+            & h2{
+                margin: 0;
+            }
+        }
     };
     &-produits{
         display: flex;
