@@ -13,6 +13,9 @@
     & img{
         width: 200px;
         height: 200px;
+        @media screen and (max-width: 900px){
+            display: none;
+        }
     }
     & p{
         margin-left: 50px;
