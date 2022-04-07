@@ -10,25 +10,58 @@
     z-index: 1000;
     top: 0;
     left: 0;
+    @media screen and (max-width: 900px){
+        position: static;
+        background-color: transparent;
+    }
     &-logo_image{
         width: 100px;
     };
+    & .menu-responsive{
+        display: none;
+        @media screen and (max-width: 900px){
+            display: block;
+            position: absolute;
+            top: 5%;
+            right: 15%;
+            font-size: x-large;
+            color: $color-primary;
+            border: none;
+            &:focus + .infos{
+                display: flex;
+            }
+        }
+    }
     & .infos{
         list-style-type: none;
         position: absolute;
         margin-top: 0;
         top: 0;
         right: 50px;
+        @media screen and (max-width: 900px){
+            position: static;
+            display: none;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            padding-left: 0;
+            justify-content: space-evenly;
+        }
         & li{
             float: left;
             text-align: center;
             padding: 20px;
+            @media screen and (max-width: 900px){
+                padding: 0;
+            }
             & a{
                 text-decoration: none;
                 color: $color-primary;
             }
             & i{
                 font-size: 25px;
+                @media screen and (max-width: 900px){
+                    font-size: medium;
+                }
             }
         }
     }
@@ -41,6 +74,9 @@
         height: 50px;
         background-color: white;
         margin: 0;
+        @media screen and (max-width: 900px){
+            display: none;
+        }
         & .categories{
             display: block;
             float: left;
@@ -63,13 +99,19 @@
                 margin-top: 19px;
                 border-top: solid $color-primary;
                 border-bottom: solid $color-primary;
+                padding-left: 0;
+                & h2{
+                    text-align: center;
+                    font-size: medium;
+                }
                 & li{
                     padding-bottom: 15px;
+                    padding-left: 30px;
                 }
                 & ul{
                     position: relative;
                     top: 0;
-                    left: 50px;
+                    // left: 50px;
                 }
             }
             &:hover  .categories-sous{

@@ -1,5 +1,9 @@
 .proposition{
-    padding-top: 60px;;
+    padding-top: 60px;
+    @media screen and (max-width: 900px) {
+        padding-top: 0px;
+        border-top: solid $color-primary;
+    }
     & h2{
         text-align: center;
         font-size: 3em;
